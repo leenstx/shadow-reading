@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Reading Player</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Shadow</h1>
+                <div class="header-buttons">
+                    <button id="theme-toggle-btn" title="Toggle Theme">
+                        <i class="material-icons">brightness_4</i>
+                    </button>
+                    <button id="select-directory-btn" title="Select Directory">
+                        <i class="material-icons">folder_open</i>
+                    </button>
+                </div>
+            </div>
+            <div id="video-list-container">
+                <ul id="video-list"></ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="video-player-container">
+                <video id="video-player" controls>
+                    <track id="subtitle-track" label="English" kind="subtitles" srclang="en" default>
+                </video>
+                <div class="player-controls">
+                    <button id="subtitle-toggle-btn" title="Toggle Subtitles" disabled>
+                        <i class="material-icons">subtitles</i>
+                    </button>
+                    <div class="speed-control">
+                        <i class="material-icons">speed</i>
+                        <input type="range" id="playback-speed" min="0.5" max="2" step="0.1" value="1">
+                        <span id="speed-indicator">1.0x</span>
+                    </div>
+                    <button id="loop-toggle-btn" title="Toggle Loop" class="active">
+                        <i class="material-icons">loop</i>
+                    </button>
+                </div>
+            </div>
+            <div id="transcript-container">
+                <div id="transcript"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
