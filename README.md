@@ -1,5 +1,7 @@
 # Shadow Reading Player
 
+![Screenshot of the Shadow Reading Player](example.png)
+
 This is a simple, elegant video player designed for language learning through shadow reading. It allows you to load a directory of videos and their corresponding subtitles, with features focused on making practice and repetition easy.
 
 ## Features
